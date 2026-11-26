@@ -1,0 +1,262 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gold: #b18a42;
+    --dark-gold: #76501f;
+    --cream: #fff8e9;
+    --maroon: #681d2b;
+}
+
+body {
+    background: var(--cream);
+    color: var(--dark-gold);
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.welcome {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background:
+        linear-gradient(#fff8e9e8, #fff8e9e8),
+        url("https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1200");
+    background-size: cover;
+    background-position: center;
+    border: 12px double var(--gold);
+    outline: 5px solid var(--maroon);
+    outline-offset: -20px;
+}
+
+.welcome-content {
+    max-width: 600px;
+    padding: 30px 15px;
+}
+
+.small-title,
+.ganesha {
+    font-family: 'Noto Serif Telugu', serif;
+    font-size: 22px;
+    color: var(--maroon);
+}
+
+.ornament {
+    font-size: 30px;
+    color: var(--gold);
+    margin: 20px 0;
+}
+
+.welcome h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    font-family: 'Cinzel', serif;
+}
+
+.welcome h2 {
+    font-size: 38px;
+    color: var(--maroon);
+    margin: 10px;
+}
+
+.and {
+    display: block;
+    font-size: 28px;
+    color: var(--gold);
+}
+
+.welcome-text {
+    margin: 20px;
+    font-size: 17px;
+}
+
+.date {
+    font-size: 22px;
+    margin: 25px;
+    letter-spacing: 4px;
+}
+
+button {
+    background: var(--maroon);
+    color: #fff5df;
+    border: 2px solid var(--gold);
+    padding: 15px 30px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--gold);
+    transform: scale(1.05);
+}
+
+.bottom-text {
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background:
+        linear-gradient(#fff8e9ed, #fff8e9ed),
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1200");
+    background-size: cover;
+    background-position: center;
+    border: 10px double var(--gold);
+}
+
+.hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(28px, 5vw, 45px);
+    margin: 30px 0;
+    color: var(--maroon);
+}
+
+.hero h2 {
+    font-size: clamp(32px, 6vw, 52px);
+    color: var(--maroon);
+    margin: 12px;
+}
+
+.intro {
+    margin-top: 25px;
+}
+
+.invite-text {
+    max-width: 450px;
+    margin: 25px auto;
+    line-height: 1.8;
+}
+
+.divider {
+    margin: 30px;
+    color: var(--gold);
+    font-size: 25px;
+}
+
+.blessing {
+    margin: 35px auto;
+    max-width: 450px;
+    line-height: 1.8;
+}
+
+.section {
+    padding: 65px 20px;
+    border-bottom: 1px solid #d8bf91;
+}
+
+.section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    color: var(--maroon);
+    margin-bottom: 30px;
+}
+
+.countdown {
+    font-size: 22px;
+    line-height: 2;
+    color: var(--maroon);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border: 7px double var(--gold);
+    padding: 5px;
+    background: white;
+}
+
+.memory-video {
+    width: 100%;
+    max-width: 750px;
+    border: 7px double var(--gold);
+}
+
+.detail {
+    margin: 35px auto;
+}
+
+.detail span {
+    color: var(--gold);
+    font-size: 25px;
+}
+
+.detail h3 {
+    color: var(--maroon);
+    margin: 10px;
+}
+
+.detail p {
+    line-height: 1.8;
+}
+
+.map-button {
+    display: inline-block;
+    background: var(--maroon);
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: 2px solid var(--gold);
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+footer {
+    padding: 60px 20px;
+    background: #f3e5c7;
+    line-height: 2;
+}
+
+footer h2 {
+    color: var(--maroon);
+}
+
+.footer-symbol {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.music-button {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 10;
+    padding: 12px;
+    font-size: 12px;
+}
+
+@media(max-width: 600px) {
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .gallery img {
+        height: 260px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Kumar & Siri Chandana | Engagement</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:wght@400;600&family=Noto+Serif+Telugu:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="music.mpeg" type="audio/mpeg">
+    </audio>
+
+    <!-- Opening Screen -->
+    <section id="welcome" class="welcome">
+        <div class="welcome-content">
+            <p class="small-title">॥ శ్రీ గణేశాయ నమః ॥</p>
+
+            <div class="ornament">❀ ❁ ❀</div>
+
+            <h1>You're Invited</h1>
+            <p class="welcome-text">To celebrate the beautiful beginning of</p>
+
+            <h2>Pavan Kumar</h2>
+            <span class="and">&</span>
+            <h2>Siri Chandana</h2>
+
+            <p class="date">10 • 12 • 2026</p>
+
+            <button onclick="openInvitation()">
+                OPEN INVITATION
+            </button>
+
+            <p class="bottom-text">A celebration of love and togetherness</p>
+        </div>
+    </section>
+
+
+    <!-- Main Invitation -->
+    <main id="invitation" class="hidden">
+
+        <header class="hero">
+            <p class="ganesha">॥ శ్రీ గణేశాయ నమః ॥</p>
+            <div class="ornament">❀ ❁ ❀</div>
+
+            <p class="intro">With the blessings of our elders</p>
+
+            <h1>Engagement Ceremony</h1>
+
+            <p class="invite-text">
+                We cordially invite you and your family
+                to grace the auspicious occasion of
+            </p>
+
+            <h2>Pavan Kumar</h2>
+            <span class="and">&</span>
+            <h2>Siri Chandana</h2>
+
+            <div class="divider">✦ ❀ ✦</div>
+
+            <h3>10 December 2026</h3>
+            <p>Thursday</p>
+
+            <p class="blessing">
+                Your presence and blessings will make
+                our celebration more memorable.
+            </p>
+        </header>
+
+
+        <!-- Countdown -->
+        <section class="section">
+            <h2>Counting the Moments</h2>
+            <div id="countdown" class="countdown"></div>
+        </section>
+
+
+        <!-- Photos -->
+        <section class="section">
+            <h2>Beautiful Memories</h2>
+            <div class="gallery">
+                <img src="photo1.jpg" alt="Couple photo">
+                <img src="photo2.jpg" alt="Couple photo">
+                <img src="photo3.jpg" alt="Couple photo">
+            </div>
+        </section>
+
+
+        <!-- Video -->
+        <section class="section">
+            <h2>A Special Memory</h2>
+            <video class="memory-video" controls playsinline>
+                <source src="engagement.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+
+        <!-- Event Details -->
+        <section class="section event">
+            <h2>The Auspicious Day</h2>
+
+            <div class="detail">
+                <span>❀</span>
+                <h3>Date</h3>
+                <p>10 December 2026</p>
+            </div>
+
+            <div class="detail">
+                <span>❀</span>
+                <h3>Time</h3>
+                <p>To be announced</p>
+            </div>
+
+            <div class="detail">
+                <span>❀</span>
+                <h3>Venue</h3>
+                <p>Venue details will be updated soon</p>
+            </div>
+
+            <a class="map-button"
+               href="https://www.google.com/maps/search/?api=1&query=YOUR+VENUE+ADDRESS"
+               target="_blank">
+                VIEW LOCATION ON MAP
+            </a>
+        </section>
+
+
+        <!-- Closing -->
+        <footer>
+            <div class="ornament">❀ ❁ ❀</div>
+            <h2>Pavan Kumar & Siri Chandana</h2>
+            <p>With love and blessings from our families</p>
+            <h3>We look forward to celebrating with you!</h3>
+            <p class="footer-symbol">॥ शुभमस्तु ॥</p>
+        </footer>
+
+        <button id="musicButton" class="music-button"
+                onclick="toggleMusic()">♫ Music On</button>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
